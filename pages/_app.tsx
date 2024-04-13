@@ -6,6 +6,7 @@ import { Navbar } from "../components/Navbar";
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
 // You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
+//change activeChain to the current provider
 const activeChain = "mumbai";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -13,9 +14,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThirdwebProvider
       clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
       activeChain={activeChain}
-      supportedWallets={[
-        embeddedWallet(),
-      ]}
+      // supportedWallets={[
+      //   embeddedWallet(),
+      // ]}
     >
       <Navbar />
       <Component {...pageProps} />

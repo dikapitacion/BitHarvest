@@ -9,6 +9,7 @@ const Home: NextPage = () => {
   const [imageUrl, setImageUrl] = useState<string | null>(null);
   const [nftName, setNftName] = useState<string>("");
   const [nftDescription, setNftDescription] = useState<string>("");
+  const [dataReq,setDataReq] = useState<string>("");
   const [mintingNFT, setMintingNFT] = useState<boolean>(false);
 
   const processFile = (file: File) => {
@@ -77,7 +78,11 @@ const Home: NextPage = () => {
       {address ? (
         <div className={styles.minterContainer}>
           <div className={styles.mintContainerSection}>
-            <h1>NFT Media</h1>
+            <h1>Model Link</h1>
+
+            {/* iske neeche se changes kardne hai */}
+
+
             <div 
               className={styles.fileContainer} 
               onClick={handleFileSelect}
@@ -119,23 +124,36 @@ const Home: NextPage = () => {
               )}
             </div>
           </div>
+
+
+          {/* iske upar tak changes karne hai bas  */}
+
+
           <div className={styles.mintContainerSection}>
-            <h1>NFT Metadata</h1>
-            <p>NFT Name:</p>
+            <h1>Model Metadata</h1>
+            <p>Model Name:</p>
             <input 
               type="text"
-              placeholder="My NFT Name"
+              placeholder="My Model Name"
               onChange={(e) => setNftName(e.target.value)}
               value={nftName}
               className={styles.metadataInput}
             />
-            <p>NFT Description:</p>
+            <p>Model Description:</p>
             <input 
               type="text"
-              placeholder="This NFT is about..."
+              placeholder="This Model is about..."
               onChange={(e) => setNftDescription(e.target.value)}
               value={nftDescription}
               className={styles.metadataInput}
+            />
+            <p>Model Data requiremts:</p>
+            <input
+            type="text"
+            placeholder="This Model requires..."
+            onChange={(e) => setDataReq(e.target.value)}
+            value={dataReq}
+            className={styles.metadataInput}
             />
             <button
               className={styles.mintButton}
