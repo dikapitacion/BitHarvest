@@ -147,14 +147,14 @@ const Home: NextPage = () => {
               value={nftDescription}
               className={styles.metadataInput}
             />
-            <p>Model Data requiremts:</p>
+            {/* <p>Model Data requiremts:</p>
             <input
             type="text"
             placeholder="This Model requires..."
             onChange={(e) => setDataReq(e.target.value)}
             value={dataReq}
             className={styles.metadataInput}
-            />
+            /> */}
             <button
               className={styles.mintButton}
               onClick={handleMint}

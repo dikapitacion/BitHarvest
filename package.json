@@ -13,10 +13,14 @@
   "dependencies": {
     "@thirdweb-dev/react": "^4",
     "@thirdweb-dev/sdk": "^4",
+    "@thirdweb-dev/engine": "^0.0.4",
+    "@thirdweb-dev/storage": "^2.0.8",
     "ethers": "^5",
+    "formidable": "^3.5.1",
     "next": "^13",
     "react": "^18.2",
-    "react-dom": "^18.2"
+    "react-dom": "^18.2",
+    "web3-api": "thirdweb-dev/engine"
   },
   "devDependencies": {
     "@types/node": "^18.11.11",

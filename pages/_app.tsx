@@ -7,7 +7,7 @@ import { Navbar } from "../components/Navbar";
 // Change this to the chain your app is built for.
 // You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
 //change activeChain to the current provider
-const activeChain = "mumbai";
+const activeChain = "sepolia";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
